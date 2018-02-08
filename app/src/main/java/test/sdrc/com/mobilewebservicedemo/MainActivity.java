@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity implements  LoginListener{
             public void onClick(View view) {
                 username = ((EditText) findViewById(R.id.username_et)).getText().toString();
                 password = ((EditText) findViewById(R.id.password_et)).getText().toString();
+				Log.v("",);
                 progressDialog.show();
                 LoginAsynTask loginAsyncTask = new LoginAsynTask();
                 loginAsyncTask.setLoginListener((LoginListener) MainActivity.this);
